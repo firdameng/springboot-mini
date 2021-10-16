@@ -183,9 +183,9 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
 
 由于我们pom.xml中依赖了spring-webmvc，从而间接依赖了spring-web，恰好spring-web实现了ServletContainerInitializer，在其包下面的META-INF/services里面  `org.springframework.web.SpringServletContainerInitializer`
 
-![image-20211016092154225](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211016092154225.png)
+![image-20211016092154225](.\img\image-20211016092154225.png)
 
-![image-20211016092219875](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211016092219875.png)
+![image-20211016092219875](.\img\image-20211016092219875.png)
 
 ~~（6）创建文件：META-INF/services/javax.servlet.ServletContainerInitializer，在该文件中配置ServletContainerInitializer的实现类MySpringServletContainerInitializer~~
 
@@ -223,4 +223,4 @@ public class MyRunBoot {
 
 （9）通过浏览器对目标方法进行方法
 
-![image-20211016092711461](C:\Users\CaiWencheng\AppData\Roaming\Typora\typora-user-images\image-20211016092711461.png)
+![image-20211016092711461](.\img\image-20211016092711461.png)
